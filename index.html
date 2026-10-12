@@ -3,43 +3,88 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Personal Website</title>
+  <title>Ryan Wong - CS @ UCLA</title>
   <style>
+    :root {
+      --primary: #0a66c2; /* LinkedIn Blue accent */
+      --dark: #1f2937;
+      --light: #f9fafb;
+      --gray: #4b5563;
+    }
     body {
-      font-family: Arial, sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       max-width: 800px;
       margin: 0 auto;
-      padding: 2rem;
+      padding: 2.5rem 1.5rem;
       line-height: 1.6;
-      color: #333;
+      color: var(--dark);
+      background-color: var(--light);
     }
     header {
       text-align: center;
       padding-bottom: 2rem;
-      border-bottom: 1px solid #ddd;
+      border-bottom: 2px solid #e5e7eb;
     }
     h1 {
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.25rem;
+      color: var(--dark);
+      font-size: 2.5rem;
+    }
+    .tagline {
+      font-size: 1.2rem;
+      color: var(--gray);
+      margin-bottom: 1rem;
     }
     nav a {
-      margin: 0 10px;
-      color: #0066cc;
+      margin: 0 12px;
+      color: var(--primary);
       text-decoration: none;
+      font-weight: 600;
     }
     nav a:hover {
       text-decoration: underline;
     }
     section {
-      margin-top: 2rem;
+      margin-top: 2.5rem;
+      background: #ffffff;
+      padding: 1.5rem 2rem;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+    h2 {
+      color: var(--primary);
+      margin-top: 0;
+    }
+    .services-list, .projects-list {
+      list-style-type: none;
+      padding: 0;
+    }
+    .services-list li, .projects-list li {
+      padding: 0.5rem 0;
+      border-bottom: 1px solid #f3f4f6;
+    }
+    .services-list li:last-child, .projects-list li:last-child {
+      border-bottom: none;
+    }
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: var(--gray);
+    }
+    footer a {
+      color: var(--primary);
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Hi, I'm Ryan. </p>
+    <h1>Ryan Wong</h1>
     <nav>
       <a href="#about">About</a>
+      <a href="#services">Services</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -47,19 +92,28 @@
 
   <section id="about">
     <h2>About Me</h2>
-    <p>I am Ryan.</p>
+    <p>I am a third-year Computer Science major at UCLA with a strong passion for cybersecurity and artificial intelligence. </p>
+  </section>
+
+  <section id="services">
+    <h2>Services & Expertise</h2>
+    <ul class="services-list">
+      <li><strong>Application Development</strong></li>
+      <li><strong>Web Development</strong></li>
+      <li><strong>Cybersecurity</strong></li>
+    </ul>
   </section>
 
   <section id="projects">
     <h2>Projects</h2>
-    <ul>
-      <li><strong>Project 1:</strong> A cool project description.</li>
-      <li><strong>Project 2:</strong> Another interesting project.</li>
-    </ul>
+    <p>Check out my <a href="https://github.com/RyanWong08880" target="_blank">GitHub</a>!</p>
   </section>
 
   <section id="contact">
+    <h2>Get in Touch</h2>
+    <p>Connect with me on <a href="https://www.linkedin.com/in/ryan-wong-43a75425b/" target="_blank">LinkedIn</a>!</p>
   </section>
+
 
 </body>
 </html>
